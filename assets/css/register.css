@@ -1,0 +1,42 @@
+:root {
+    --red : #bb1717;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.reg-body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../images/IMG-20221102-WA0006.jpg'); 
+    backdrop-filter: blur(3px);
+}
+.reg-btn {
+    background: var(--red);
+    color: #f0f0f0;
+}
+.space-btn {
+    justify-content: space-between;
+}
+.popup-screen {
+    background: rgb(255, 255, 255, 0.0);
+    height: auto;
+    transition: 1s ease-in;
+    transition-property: transform;  
+  
+}
+.popup-screen.active {
+    visibility: visible;
+}
+.popup-box {
+    transition: 1s ease-in-out;
+    transform: scale(0);
+    height: auto;
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.popup-screen.active .popup-box {
+    transform: scale(1);
+}
