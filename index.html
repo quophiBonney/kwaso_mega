@@ -35,15 +35,10 @@
     </nav>
     <div class="container-fluid" id="below-navbar">
         <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6 text-center py-5">
+            <div class="col-sm-12 col-md-6 col-lg-6 text-center py-5 mt-3">
                <h1 class="text-light">Make Your Body<br><span class="fit">Healthy Always</span></h1>
-               <p class="first-paragraph text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore dolorum vero quasi sit perferendis magni, necessitatibus voluptatum magnam! Quidem, eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sed pariatur blanditiis asperiores consectetur corporis.</p>
-               <form  action="" method="POST">
-                <fieldset class="d-flex">
-                 <input type="email" class="form-control" name="email" required="" placeholder="Your Email Address">
-                    <input type="submit" class="btn btn-md reg-btn" value="Subscribe" name="subscribe">
-                </fieldset>
-               </form>
+               <p class="first-paragraph text-light">No judgments means room for everyone, regardless of shape, size, age, race, gender or fitness level. No matter your workout of choice, we want you to feel good while reaching your goals. Join the fun.</p>
+               <a href="#" data-toggle="modal" data-target="#hireMe" class="btn btn-md reg-btn">Join For Fun</a>
                <div class="d-flex space-btn">
                 <div class="container" data-aos="slide-up" data-aos-duration="2000" data-aos-delay="100">
             <i class="fa fa-map-marker mt-5"></i>
@@ -59,7 +54,7 @@
         </div>
         </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6" id="sec-col">
+            <div class="col-sm-12 col-md-6 col-lg-6" id="sec-col" data-aos="slide-up" data-aos-delay="100" data-aos-duration="2000">
                 <img src="assets/images/IMG-20221102-WA0000.jpg" alt="" class="img-fluid">
              </div>
         </div>
@@ -68,39 +63,73 @@
         <div class="row">
             <div class="col-12 text-center py-5 text-light">
                 <h3 class="events">Our <span class="event">Events</span></h3>
-                <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, reiciendis.</p>
+                <p class="text-light">Believe in the power of a motivating group fitness community.</p>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-4 text-center mb-4">
              <img src="assets/images/pic3.jpg" alt="" class="img-fluid">
              <div class="contain">
              <h3 class="p-title">Kwaso Muscle Training</h3>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis doloribus impedit, atque iusto, deserunt minima nam voluptas voluptatibus illum nihil architecto dolorum odit ea nemo.</p>
+             <p>We are nurturers: we seek only to encourage, entertain, and empower.</p>
              </div>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-4 text-center mb-4">
                 <img src="assets/images/pic2.jpg" alt="" class="img-fluid">
                 <div class="contain">
                 <h3 class="p-title">Kwaso Mass Fitness</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis doloribus impedit, atque iusto, deserunt minima nam voluptas voluptatibus illum nihil architecto dolorum odit ea nemo.</p>
+                <p>Here we keep open minds. There is no one type or way in our diverse community. Come as you are!.</p>
                 </div>
                </div>
                <div class="col-sm-12 col-md-4 col-lg-4 text-center mb-4">
                 <img src="assets/images/pic4.jpg" alt="" class="img-fluid">
                 <div class="contain">
                 <h3 class="p-title">Kwaso Mega Aerobics</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis doloribus impedit, atque iusto, deserunt minima nam voluptas voluptatibus illum nihil architecto dolorum odit ea nemo.</p>
+                <p>We know serious fitness is hard, but that doesn’t mean it can’t be an edge-of-your-seat.</p>
                 </div>
                </div>
         </div>
     </div>
+    <div class="modal fade" id="hireMe" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-sm-6 col-lg-6 col-xl-12">
+          <h3 class="text-center heading mt-2 text-uppercase">Kwaso Mega</h3>
+          <p class="text-center">Please fill all the fields below to place your order.</p>
+           <center><i class="fa fa-times" data-dismiss="modal"></i></center><br/>
+            <form method="POST" action="includes/call-form.php">
+              <div class="form-group mt-2">
+                <label for="full name">Full Name <span class="asteriks">*</span></label>
+                <input type="text" name="fullName" 
+                    class="form-control hiring-input" required>
+            </div>
+              <div class="form-group mt-2">
+                <label for="phone">Phone Number <span class="asteriks">*</span></label>
+                  <input type="tel" name="contact"
+                      class="form-control" required="">
+              </div>
+                <div class="form-group mt-3">
+                    <input type="submit" name="joinNow" class="btn btn-md reg-btn" value="Join Now">
+                </div>
+                <br>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
     <div class="container mt-5">
         <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6 text-center mb-4">
              <img src="assets/images/photo-1627483298423-03e2e972431c.jpeg" alt="" class="img-fluid">
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 text-center mt-5">
-                <h3 class="what-we-do">What We Do?</h3>
-                <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, voluptates? Doloremque est voluptatum fugiat nihil provident repellat non officiis mollitia necessitatibus sequi! Hic enim sit reiciendis est harum suscipit accusantium molestiae incidunt animi omnis non similique, nobis velit optio nemo distinctio dolor fugiat exercitationem maxime repellendus laborum voluptate? Ab a assumenda nesciunt laboriosam enim magnam distinctio et quos eos fugit totam blanditiis corporis vero, possimus laborum rerum doloremque officiis atque amet ut? Eos quidem iusto fugit unde placeat at fugiat expedita corporis.</p>
+                <h3 class="what-we-do">WELCOME TO KWASO MEGA</h3>
+                <p class="text-light">Train with our experts to drive your results. There are no judgments here – No too much or not enough. No glares of disapproval. Here we keep open minds. We are nurturers. We seek only to encourage, empower and entertain. There is no one type. There is no one reason. There is no one way.
+
+                    What we are is a diverse community; what we have is a culture of fun; what there is, is room for everyone: all kinds of people with all kinds of goals who’ve chosen to come reach them with us.</p>
                </div>
         </div>
     </div>
@@ -112,7 +141,6 @@
             <div class="col-sm-12 col-md-4 col-lg-4 text-center mb-4 py-3" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="2000">
                 <div class="benefits">
                 <h3 class="p-title">Great Support</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis doloribus impedit, atque iusto, deserunt minima nam voluptas voluptatibus illum nihil architecto dolorum odit ea nemo.</p>
                   <ol>
                     <li>We support our members during celebrations of their moment and moments of difficulties.</li>
                     <li>We support our members during celebrations of their moment and moments of difficulties.</li>
@@ -125,7 +153,6 @@
                <div class="col-sm-12 col-md-4 col-lg-4 text-center mb-4 py-3" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="2000">
                    <div class="benefits">
                    <h3 class="p-title">Kwaso Mass Fitness</h3>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis doloribus impedit, atque iusto, deserunt minima nam voluptas voluptatibus illum nihil architecto dolorum odit ea nemo.</p>
                    <ol>
                     <li>We support our members during celebrations of their moment and moments of difficulties.</li>
                     <li>We support our members during celebrations of their moment and moments of difficulties.</li>
@@ -138,7 +165,6 @@
                   <div class="col-sm-12 col-md-4 col-lg-4 text-center mb-4 py-3" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="2000">
                    <div class="benefits">
                    <h3 class="p-title">Kwaso Mega Aerobics</h3>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis doloribus impedit, atque iusto, deserunt minima nam voluptas voluptatibus illum nihil architecto dolorum odit ea nemo.</p>
                    <ol>
                     <li>We support our members during celebrations of their moment and moments of difficulties.</li>
                     <li>We support our members during celebrations of their moment and moments of difficulties.</li>
@@ -153,13 +179,11 @@
 
     <footer class="container-fluid" id="footer">
             <div class="row justify-content-center">
-                <div class="col-md-8 mt-4">
-                    <div class="col-md-10">
-                    <center><img src="assets/images/photo-1539794830467-1f1755804d13.jpeg" alt="" class="img-fluid" style="width: 80px;"></center>
-                    <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus neque eos quidem soluta minus quo aspernatur cum ea saepe harum inventore dolorum dicta nulla in eveniet deserunt odio maxime nihil non tempora, cumque repudiandae tempore officia? Tempora assumenda cum, impedit dolorum ea, neque cumque adipisci ipsa praesentium commodi quod consequuntur!</p>
+                    <div class="col-md-3 mt-3">
+                    <img src="assets/images/logo.jpg" alt="" class="img-fluid rounded-pill" style="width: 80px; height: 80px;">
+                    <p class="text-light">Some may call it a tagline, but for us, it’s a way of life. An unfiltered philosophy that drives us to create a community and a gym for all.</p>
                 </div>
-            </div>
-                <div class="col-md-2 mt-4">
+                <div class="col-md-3 mt-4">
                     <h4>Quick Links</h4>
                     <ul>
                       <li><a href="index.html" class="text-decoration-none text-light">Home</a></li>
@@ -168,7 +192,16 @@
                       <li><a href="" class="text-decoration-none text-light">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-md-2 mt-4">
+                <div class="col-md-3 mt-4">
+                    <h4>Other Pages</h4>
+                    <ul>
+                      <li><a href="index.html" class="text-decoration-none text-light">Home</a></li>
+                      <li><a href="events.html" class="text-decoration-none text-light">Events</a></li>
+                      <li><a href="" class="text-decoration-none text-light">About Us</a></li>
+                      <li><a href="" class="text-decoration-none text-light">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mt-4">
                     <h4>Follow Us</h4>
                     <a href=""><i class="fa fa-facebook"></i></a>
                     <a href=""><i class="fa fa-instagram"></i></a>
